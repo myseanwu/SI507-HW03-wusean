@@ -11,7 +11,10 @@ def answer():
         if answer == 'quit':
             break
         if not answer.endswith('?'):
-            print("I’m sorry, I can only answer questions.")
+            print("I'm sorry, I can only answer questions.")
         elif answer.endswith('?'):
             print(random.choice(reply2))
             break
+
+if __name__ == '__main__':
+    answer()
